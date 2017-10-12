@@ -7,6 +7,7 @@ require('es6-promise');
 var promise = new Promise(function (resolve) {
   // Your solution here
   setTimeout(function() {
-    resolve('TIMED OUT!!!')
-  });
-}, 300);
+    resolve('TIMED OUT!!!');
+    console.log(resolve);
+  }, 300);
+});

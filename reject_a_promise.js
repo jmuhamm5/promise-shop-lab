@@ -4,13 +4,11 @@ require('es6-promise');
 
 var promise = new Promise(function (fulfill, reject) {
   // Your solution here
-  if (true) {
-    fulfill();
-  } else {
-    reject();
-  }
 });
 
+
+function onReject(error) {
+  // Your solution here
+}
+
 // Your solution here
-promise
-    .then(
