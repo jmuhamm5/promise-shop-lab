@@ -3,14 +3,19 @@ require('es6-promise');
 'use strict';
 
 var promise = new Promise(function (fulfill, reject) {
-  // Your solution here
-  if (true) {
-    fulfill();
-  } else {
-    reject();
-  }
-});
+      fulfill('SECRET VALUE');
+    });
 
-// Your solution here
-promise
-    .then(
+    // Introducing: Promise.resolve
+    // It does the exact same thing as above:
+
+    var promise = Promise.resolve('SECRET VALUE');
+
+
+    // Likewise...
+
+    var promise = new Promise(function (fulfill, reject) {
+      reject(new Error('SECRET VALUE'));
+    });
+
+    var promise = Promise.reject(new Error('SECRET VALUE'));

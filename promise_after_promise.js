@@ -2,15 +2,10 @@ require('es6-promise');
 
 'use strict';
 
-var promise = new Promise(function (fulfill, reject) {
-  // Your solution here
-  if (true) {
-    fulfill();
-  } else {
-    reject();
-  }
-});
-
-// Your solution here
-promise
-    .then(
+Parse.User.logIn('user', 'pass').then(function (user) {
+      return query.find();
+    }).then(function (results) {
+      return results[0].save({ key: value });
+    }).then(function (result) {
+      // the object was saved
+    });
