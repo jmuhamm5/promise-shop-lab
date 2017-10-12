@@ -3,10 +3,10 @@ require('es6-promise');
 'use strict';
 
 
-var p = Promise.p([
-  new Promise(function(resolve) {
-    setTimeout(function() {
-      resolve('TIMED OUT!!!');
-    }, 300);
-  })
-]);
+
+var promise = new Promise(function (resolve) {
+  // Your solution here
+  setTimeout(function() {
+    resolve('TIMED OUT!!!')
+  });
+}, 300);
